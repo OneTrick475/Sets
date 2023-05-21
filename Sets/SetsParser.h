@@ -7,9 +7,11 @@
 class SetsParser {
 	PolymorphicPtr<ISet> set;
 
-	Vector<int> getNums(std::istream& file) const;
+	MyString readFileName(std::ifstream& file) const;
+	Vector<int> readNums(std::istream& file, size_t numberOfElements) const;
 	PolymorphicPtr<ISet> readSet(const MyString& fileName = "sets.dat") const;
 
 public:
+	void getInRange(int low, int high);
 	void run();
 };
