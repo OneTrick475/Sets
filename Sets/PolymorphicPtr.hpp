@@ -1,3 +1,6 @@
+//the idea of this class is to take care of clone,copy,move,delete etc for pointers in a polymorphic hierarchy
+//you create it by doing: PolymorphicPtr<Base> obj(new Base()/ new Der())
+//it is intended to behave like a normal object so after creating it you dont have to do any extra work for copy and etc to work properly.
 #pragma once
 #include <iostream>
 
